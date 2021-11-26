@@ -1,33 +1,56 @@
-html, body
+html, header, body, h1, h2, h3, h4
 {
     font-family: roboto, sans-serif;
 }
 
-header, h1, h2, h3, h4
+h1
 {
-    font-family: shrikhand, sans-serif;
-    font-weight: normal;
+    font-family: shrikhand;
 }
-
 /*header*/
+
+.header__logo
+{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
 
 .header__logo img
 {
     width: 10%;
+    margin-top: 10px;
+    
 }
 
 .header__localisation
 {
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: #cfcfcf;
+    width: 100%;
+    height: 40px;
+}
+
+.gps
+{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: 12px;
+}
+
+input
+{
+    border: none;
+    background-color: #cfcfcf;
+    font-weight: bold;
 }
 
 .presentation
 {  
     text-align: center;
-    background-color: #cfcfcf;
-    margin-top: -16px;
+    background-color: #e5e5e5;
+    margin-top: -17px;
 }
 .presentation h2
 {
@@ -43,13 +66,18 @@ header, h1, h2, h3, h4
 }
 /*Main*/
 
+.fonction
+{
+    text-align: center;
+}
+
 .fonction__liste__image
 {
     display: flex;
     align-items: baseline;
-    border: 1px #cfcfcf solid;
+    border: 1px #e5e5e5 solid;
     border-radius: 20px;
-    background-color: #cfcfcf;
+    background-color: #e5e5e5;
     margin-bottom: 10px;
     width: 25%;
 }
@@ -76,19 +104,22 @@ header, h1, h2, h3, h4
 
 /*Restaurants*/
 
+
 .restaurants
 {
-    background-color: #cfcfcf;
+    background-color: #e5e5e5;
+    width: 100%;
 }
 
 .restaurants h2
 {
     text-align: center;
 }
+
 .restaurants__choix
 {
     background-color: white;
-    box-shadow: 1px 3px 4px 3px darkgrey;
+    box-shadow: 1px 3px 4px 3px #e5e5e5;
     border-radius: 17px;
     margin: 15px auto;
     padding: 4px;
@@ -98,23 +129,127 @@ header, h1, h2, h3, h4
 
 .restaurants__choix img
 {
-    border-radius: 15px;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 100%;
     height: 67%;
     object-fit: cover;
+    cursor: pointer;
 }
+
+.nouveau
+{
+    background-color: #99E2D0;
+    color: green;
+    position: absolute;
+    text-align: center;
+}
+
+.restaurants__description
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
 
 .restaurants__description h3, p
 {
-    text-decoration: none;
+    color: black;
+}
+
+.restaurants__description p
+{
+    margin-top: -14px;
+}
+.restaurant__like
+{
+    position: absolute;
+    cursor: pointer;
 }
 /*Footer*/
 
 footer
 {
-    background-color: black;
+    background-color: rgb(41, 40, 40);
     color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+footer p a
+{
+    color: white;
+    text-decoration: none;
 }
 
 
-/*# sourceMappingURL=styles.css.map */
+/*Page restaurant*/
+
+/*Header*/
+
+/*Main*/
+
+main
+{
+    
+    background-color: #e5e5e5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  
+}
+
+main img
+{
+    width: 40%;
+    margin-left: 537px;
+}
+
+h2
+{
+    border-bottom: 4px solid #99E2D0;
+    padding-bottom: 5px;
+}
+
+h3
+{
+    font-size: 20px;
+}
+
+.photo
+{
+    object-fit: cover;
+}
+
+.restaurant
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant__titre
+{
+    font-weight: bold;
+}
+
+.entrees, .plats, .desserts
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.entree__titre, .plat__titre, .dessert__titre
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px white;
+    margin-top: 10px;
+    height: 75px;
+    width: 400px;
+}
+/*# sourceMappingURL=styles.css.map 
