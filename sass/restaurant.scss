@@ -1,0 +1,68 @@
+/*Page restaurant*/
+
+/*Header*/
+
+/*Main*/
+
+
+main
+{
+    
+    background-color: #e5e5e5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  
+}
+
+main img
+{
+    width: 40%;
+    margin-left: 537px;
+}
+
+h2
+{
+    border-bottom: 4px solid #99E2D0;
+    padding-bottom: 5px;
+}
+
+h3
+{
+    font-size: 20px;
+}
+
+.photo
+{
+    object-fit: cover;
+}
+
+.restaurant
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant__titre
+{
+    font-weight: bold;
+}
+
+.entrees, .plats, .desserts
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.entree__titre, .plat__titre, .dessert__titre
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px white;
+    margin-top: 10px;
+    height: 75px;
+    width: 400px;
+}

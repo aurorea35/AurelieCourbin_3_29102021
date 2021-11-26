@@ -1,1 +1,179 @@
+html, body 
+{
+    font-family: roboto, sans-serif;
+}
+
+h1
+{
+    font-family: shrikhand;
+}
+
+/*header*/
+
+.header
+{
+    &__logo{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        img{
+            width: 10%;
+            margin-top: 10px;
+        }
+    }
+    &__localisation{
+        display: flex;
+        justify-content: center;
+        background-color: #cfcfcf;
+        width: 100%;
+        height: 40px;
+        &__gps{
+            font-size: 20px;
+            margin-top: 8px;
+            margin-right: 12px;
+        }
+        input{
+            border: none;
+            background-color: #cfcfcf;
+            font-weight: bold;
+        }  
+    }
+    &__presentation{
+        text-align: center;
+        background-color: #e5e5e5;
+        margin-top: -17px;
+        h2{
+            font-size: 20px;
+        }
+        button{
+            border: 10px #9356DC solid;
+            border-radius: 20px;
+            background-color: #9356DC;
+            color: white;
+        }
+    }
+
+}
+
+/*Main*/
+
+.fonction
+{
+    text-align: center;
+}
+
+.fonction__liste__image
+{
+    display: flex;
+    align-items: baseline;
+    border: 1px #e5e5e5 solid;
+    border-radius: 20px;
+    background-color: #e5e5e5;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+.fonction__liste__image i
+{
+    color: #9356DC;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.fonction__nombre
+{
+    background-color: #9356DC;
+    color: white;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 20px;
+    width: 25px;
+    height: 34px;
+    padding-right: 10px;
+    margin-left: -15px;
+}
+
+/*Restaurants*/
+
+
+.restaurants
+{
+    background-color: #e5e5e5;
+    width: 100%;
+}
+
+.restaurants h2
+{
+    text-align: center;
+}
+
+.restaurants__choix
+{
+    background-color: white;
+    box-shadow: 1px 3px 4px 3px #e5e5e5;
+    border-radius: 17px;
+    margin: 15px auto;
+    padding: 4px;
+    width: 30%;
+    height: 250px;
+}
+
+.restaurants__choix img
+{
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 67%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.nouveau
+{
+    background-color: #99E2D0;
+    color: green;
+    position: absolute;
+    text-align: center;
+}
+
+.restaurants__description
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.restaurants__description h3, p
+{
+    color: black;
+}
+
+.restaurants__description p
+{
+    margin-top: -14px;
+}
+.restaurant__like
+{
+    position: absolute;
+    cursor: pointer;
+}
+/*Footer*/
+
+footer
+{
+    background-color: rgb(41, 40, 40);
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+footer p a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
 
