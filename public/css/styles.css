@@ -51,31 +51,47 @@ h1 {
 /*Main*/
 .fonction {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 25%;
+}
+.fonction h2 {
+  margin: auto;
+}
+.fonction__liste {
+  margin: auto;
 }
 .fonction__liste__image {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   border: 1px #e5e5e5 solid;
   border-radius: 20px;
+  box-shadow: 1px 3px 4px 3px #aa2121;
   background-color: #e5e5e5;
   margin-bottom: 10px;
-  width: 25%;
+  width: 100%;
 }
 .fonction__liste__image i {
   color: #9356DC;
   margin-left: 30px;
   margin-right: 30px;
+  font-size: 20px;
 }
-.fonction__nombre {
+.fonction__liste__image__nombre {
   background-color: #9356DC;
   color: white;
-  text-align: center;
-  line-height: 2.5;
-  border-radius: 20px;
-  width: 25px;
-  height: 34px;
-  padding-right: 10px;
+  line-height: 0.5;
+  border-radius: 25px;
+  width: 10px;
+  height: 10px;
   margin-left: -15px;
+  padding: 10px;
+}
+.fonction__liste__image__titre {
+  padding-right: 45px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*Restaurants*/
@@ -129,9 +145,19 @@ h1 {
   text-align: center;
   margin-top: -20px;
 }
+.footer__titre h4 {
+  font-family: shrikhand;
+  font-size: 20px;
+}
+.footer i {
+  margin-right: 10px;
+}
 .footer p a {
   color: white;
   text-decoration: none;
+}
+.footer a {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
