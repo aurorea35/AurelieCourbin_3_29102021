@@ -52,7 +52,6 @@ h1 {
 .fonction {
   text-align: center;
 }
-
 .fonction__liste__image {
   display: flex;
   align-items: baseline;
@@ -62,13 +61,11 @@ h1 {
   margin-bottom: 10px;
   width: 25%;
 }
-
 .fonction__liste__image i {
   color: #9356DC;
   margin-left: 30px;
   margin-right: 30px;
 }
-
 .fonction__nombre {
   background-color: #9356DC;
   color: white;
@@ -86,11 +83,9 @@ h1 {
   background-color: #e5e5e5;
   width: 100%;
 }
-
 .restaurants h2 {
   text-align: center;
 }
-
 .restaurants__choix {
   background-color: white;
   box-shadow: 1px 3px 4px 3px #e5e5e5;
@@ -100,7 +95,6 @@ h1 {
   width: 30%;
   height: 250px;
 }
-
 .restaurants__choix img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -109,42 +103,33 @@ h1 {
   object-fit: cover;
   cursor: pointer;
 }
-
-.nouveau {
+.restaurants__choix__nouveau {
   background-color: #99E2D0;
   color: green;
   position: absolute;
   text-align: center;
 }
-
-.restaurants__description {
+.restaurants__choix__description {
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
-
-.restaurants__description h3, p {
+.restaurants__choix__description h3 p {
   color: black;
 }
-
-.restaurants__description p {
-  margin-top: -14px;
-}
-
-.restaurant__like {
+.restaurants__choix__like {
   position: absolute;
   cursor: pointer;
 }
 
 /*Footer*/
-footer {
+.footer {
   background-color: #292828;
   color: white;
   text-align: center;
   margin-top: -20px;
 }
-
-footer p a {
+.footer p a {
   color: white;
   text-decoration: none;
 }

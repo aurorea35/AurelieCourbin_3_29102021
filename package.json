@@ -4,7 +4,8 @@
   "description": "utilisation du SCSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css",
+    "sass": "sass --watch ./sass/restaurant.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
