@@ -22,11 +22,14 @@ h1 {
   background-color: #cfcfcf;
   width: 100%;
   height: 40px;
+  padding-top: 5px;
+  padding-bottom: 17px;
 }
 .header__localisation__gps {
   font-size: 20px;
   margin-top: 8px;
   margin-right: 12px;
+  margin-left: 45px;
 }
 .header__localisation input {
   border: none;
@@ -37,6 +40,8 @@ h1 {
   text-align: center;
   background-color: #e5e5e5;
   margin-top: -17px;
+  padding-top: 15px;
+  padding-bottom: 45px;
 }
 .header__presentation h2 {
   font-size: 20px;
@@ -46,6 +51,7 @@ h1 {
   border-radius: 20px;
   background-color: #9356DC;
   color: white;
+  margin-top: 10px;
 }
 
 /*Main*/
@@ -55,25 +61,28 @@ h1 {
   flex-wrap: wrap;
   margin: auto;
   width: 25%;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 .fonction h2 {
   margin: auto;
 }
 .fonction__liste {
   margin: auto;
+  padding-top: 20px;
 }
 .fonction__liste__image {
   display: flex;
   align-items: center;
   border: 1px #e5e5e5 solid;
   border-radius: 20px;
-  box-shadow: 1px 3px 4px 3px #aa2121;
+  box-shadow: 1px 3px 4px 3px #797777;
   background-color: #e5e5e5;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   width: 100%;
 }
 .fonction__liste__image i {
-  color: #9356DC;
+  color: #949090;
   margin-left: 30px;
   margin-right: 30px;
   font-size: 20px;
@@ -98,6 +107,8 @@ h1 {
 .restaurants {
   background-color: #e5e5e5;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .restaurants h2 {
   text-align: center;
@@ -121,19 +132,23 @@ h1 {
 }
 .restaurants__choix__nouveau {
   background-color: #99E2D0;
+  border-radius: 3px;
   color: green;
   position: absolute;
   text-align: center;
 }
-.restaurants__choix__description {
+.restaurants__choix__legende {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+}
+.restaurants__choix__legende__description {
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
-.restaurants__choix__description h3 p {
-  color: black;
-}
-.restaurants__choix__like {
+.restaurants__choix__legende__like {
+  display: inline-block;
   position: absolute;
   cursor: pointer;
 }
