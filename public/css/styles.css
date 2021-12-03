@@ -137,20 +137,19 @@ h1 {
   position: absolute;
   text-align: center;
 }
-.restaurants__choix__legende {
-  display: block;
-  flex-direction: row;
-  align-items: center;
-}
 .restaurants__choix__legende__description {
-  display: flex;
-  flex-direction: column;
   cursor: pointer;
 }
 .restaurants__choix__legende__like {
   display: inline-block;
   position: absolute;
   cursor: pointer;
+}
+.restaurants__choix__legende2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
 }
 
 /*Footer*/

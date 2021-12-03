@@ -147,12 +147,7 @@ h1
             text-align: center;
         }
         &__legende{
-            display: block;
-            flex-direction: row;
-            align-items: center;   
             &__description{
-                display: flex;
-                flex-direction: column;
                 cursor: pointer;
             }
             &__like{
@@ -160,6 +155,12 @@ h1
                 position: absolute;
                 cursor: pointer;
             }
+        }
+        &__legende2{
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: center;
         }
     }
 }
