@@ -1,3 +1,5 @@
+/*Page d'accueil*/
+
 html, body 
 {
     font-family: roboto, sans-serif;
@@ -191,7 +193,20 @@ h1
 }
 
 
+/*Pages restaurants*/
 
+.main{
+    background-color: #e5e5e5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.photo{
+    &__photo{
+        width: 40%;
+        margin-left: 537px;
+    }
+}
 
 
 
