@@ -141,28 +141,23 @@ h1
             object-fit: cover;
             cursor: pointer;
         }
-        &__nouveau{
-            background-color: #99E2D0;
-            border-radius: 3px;
-            color: green;
-            position: absolute;
-            text-align: center;
-        }
         &__legende{
+            display: flex;
+            flex-direction: row;
             &__description{
                 cursor: pointer;
             }
+            &__nouveau{
+                background-color: #99E2D0;
+                border-radius: 3px;
+                color: green;
+                position: absolute;
+                text-align: center;
             &__like{
                 display: inline-block;
                 position: absolute;
                 cursor: pointer;
             }
-        }
-        &__legende2{
-            display: flex;
-            flex-direction: row;
-            justify-content: right;
-            align-items: center;
         }
     }
 }
@@ -191,23 +186,3 @@ h1
         margin-left: 10px;
     }
 }
-
-
-/*Pages restaurants*/
-
-.main{
-    background-color: #e5e5e5;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.photo{
-    &__photo{
-        width: 40%;
-        margin-left: 537px;
-    }
-}
-
-
-
-
