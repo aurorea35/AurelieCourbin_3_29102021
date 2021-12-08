@@ -130,9 +130,21 @@ h1
         box-shadow: 1px 3px 4px 3px #e5e5e5;
         border-radius: 17px;
         margin: 15px auto;
-        padding: 4px;
         width: 30%;
         height: 250px;
+        a{
+            text-decoration: none;
+        }
+        &__nouveau{
+            background-color: #99E2D0;
+            border-radius: 3px;
+            color: green;
+            position: absolute;
+            text-align: center;
+            margin: 10px 0px 0px 440px;
+            padding: 10px;
+            font-size: 12px;
+        }
         img{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
@@ -142,19 +154,15 @@ h1
             cursor: pointer;
         }
         &__legende{
-            display: flex;
-            flex-direction: row;
             &__description{
                 cursor: pointer;
+                color: black;
+                h3, p{
+                    margin: 10px 0px;
+                }
             }
-            &__nouveau{
-                background-color: #99E2D0;
-                border-radius: 3px;
-                color: green;
-                position: absolute;
-                text-align: center;
+            
             &__like{
-                display: inline-block;
                 position: absolute;
                 cursor: pointer;
             }
