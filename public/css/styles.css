@@ -7,6 +7,16 @@ h1 {
   font-family: shrikhand;
 }
 
+h3, p {
+  font-size: 14px;
+  padding-left: 14px;
+}
+
+h3 {
+  margin-bottom: 0px;
+}
+
+/*loader*/
 /*header*/
 .header__logo {
   width: 100%;
@@ -143,16 +153,27 @@ h1 {
   object-fit: cover;
   cursor: pointer;
 }
+.restaurants__choix__legende {
+  display: flex;
+}
 .restaurants__choix__legende__description {
   cursor: pointer;
   color: black;
 }
-.restaurants__choix__legende__description h3, .restaurants__choix__legende__description p {
+.restaurants__choix__legende__description h3 {
   margin: 10px 0px;
 }
 .restaurants__choix__legende__like {
   position: absolute;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 455px;
+  font-size: 40px;
+  color: black;
+  line-height: 58px;
+  margin-top: 10px;
 }
 
 /*Footer*/
@@ -165,6 +186,7 @@ h1 {
 .footer__titre h4 {
   font-family: shrikhand;
   font-size: 20px;
+  margin-top: 17px;
 }
 .footer i {
   margin-right: 10px;
@@ -176,5 +198,7 @@ h1 {
 .footer a {
   margin-left: 10px;
 }
+
+
 
 /*# sourceMappingURL=styles.css.map */
