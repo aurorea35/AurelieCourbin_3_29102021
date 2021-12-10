@@ -1,0 +1,55 @@
+.restaurants
+{
+    background-color: #e5e5e5;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2{
+        text-align: center;
+    }
+    &__choix{
+        background-color: white;
+        box-shadow: 1px 3px 4px 3px #e5e5e5;
+        border-radius: 17px;
+        margin: 15px auto;
+        width: 30%;
+        height: 250px;
+        a{
+            text-decoration: none;
+        }
+        
+        img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        &__legende{
+            display: flex;
+            &__description{
+                cursor: pointer;
+                color: black;
+                h3{
+                    margin: 5px 0px;
+                }
+                p{
+                    margin-top: 5px;
+                }
+            }
+            &__like{
+                position: absolute;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 465px;
+                font-size: 21px;
+                color: black;
+                line-height: 45px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

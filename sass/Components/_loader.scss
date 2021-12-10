@@ -1,0 +1,32 @@
+.loader{
+    position: fixed;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    &__item{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 60px;
+        background: white;
+        &__verre{
+            position: absolute;
+            z-index: 2;
+            color: #9356DC;
+            top: 25px;
+            right: 25px;
+        }
+        &__couverts{
+            position: absolute;
+            z-index: 2;
+            color: #99E2D0;
+            top: 15px;
+            right: 15px;
+        }
+    }
+}

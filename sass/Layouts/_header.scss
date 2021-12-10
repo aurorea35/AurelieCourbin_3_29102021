@@ -1,0 +1,42 @@
+.header
+{
+    &__logo{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        img{
+            width: 10%;
+            margin-top: 10px;
+        }
+    }
+    &__localisation{
+        display: flex;
+        justify-content: center;
+        background-color: #cfcfcf;
+        width: 100%;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 17px;
+        &__gps{
+            font-size: 20px;
+            margin-top: 8px;
+            margin-right: 12px;
+            margin-left: 45px;
+        }
+        &__ville{
+            border: none;
+            background-color: #cfcfcf;
+            font-weight: bold;
+        }  
+    }
+    &__presentation{
+        text-align: center;
+        background-color: #e5e5e5;
+        margin-top: -17px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+        h2{
+            font-size: 20px;
+        }
+    }
+}
