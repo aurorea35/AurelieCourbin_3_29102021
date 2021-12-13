@@ -1,4 +1,4 @@
-.loader{
+.ldr{
     position: fixed;
     display: flex;
     left: 0px;
@@ -8,25 +8,64 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    &__item{
+    animation: 3s forwards;
+    &__rd{
+        &--1{
+            animation: 500ms forwards;
+        }
+        &--2{
+            animation: 200ms 1.5s forwards;
+        }
+    }
+    &__it{   
         position: relative;
         height: 100px;
         width: 100px;
         border-radius: 60px;
         background: white;
+        &__feui{
+            position: absolute;
+            z-index: 3;
+            color: #FF79DA;
+            &--1{
+                right: 6px;
+                top: 37px;
+                transform: rotate(-50deg);
+                opacity: 2;
+                animation: 150ms .5s forwards;
+            }
+            &--2{
+                right: 60px;
+                top: 40px;
+                z-index: 4;
+                transform: rotate(-80deg);
+                opacity: 2;
+                animation: 150ms .6s forwards;
+            }
+        }
         &__verre{
             position: absolute;
             z-index: 2;
             color: #9356DC;
-            top: 25px;
-            right: 25px;
+            top: 15px;
+            right: 30px;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(12deg);
+            opacity: 2;
+            animation: 500ms forwards;
         }
-        &__couverts{
+        &__couv{
             position: absolute;
             z-index: 2;
-            color: #99E2D0;
-            top: 15px;
-            right: 15px;
+            color: #92D9E0;
+            top: 65px;
+            right: 35px;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-12deg);
+            opacity: 2;
+            animation: 300ms forwards;
         }
     }
 }
