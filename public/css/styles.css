@@ -1,3 +1,4 @@
+/*Page d'accueil*/
 html, body {
   font-family: roboto, sans-serif;
 }
@@ -24,7 +25,22 @@ button {
   margin-top: 10px;
 }
 
-.loader {
+.btn-arriere {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  font-size: 1.1em;
+  line-height: 63px;
+  padding: 0 2% 0 5%;
+}
+
+.lieu__photo {
+  width: 40%;
+  margin-left: 537px;
+}
+
+.ldr {
   position: fixed;
   display: flex;
   left: 0px;
@@ -34,27 +50,64 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 25px;
+  animation: 3s forwards;
 }
-.loader__item {
+.ldr__rd--1 {
+  animation: 500ms forwards;
+}
+.ldr__rd--2 {
+  animation: 200ms 1.5s forwards;
+}
+.ldr__it {
   position: relative;
   height: 100px;
   width: 100px;
   border-radius: 60px;
   background: white;
 }
-.loader__item__verre {
+.ldr__it__feui {
+  position: absolute;
+  z-index: 3;
+  color: #FF79DA;
+}
+.ldr__it__feui--1 {
+  right: 6px;
+  top: 37px;
+  transform: rotate(-50deg);
+  opacity: 2;
+  animation: 150ms 0.5s forwards;
+}
+.ldr__it__feui--2 {
+  right: 60px;
+  top: 40px;
+  z-index: 4;
+  transform: rotate(-80deg);
+  opacity: 2;
+  animation: 150ms 0.6s forwards;
+}
+.ldr__it__verre {
   position: absolute;
   z-index: 2;
   color: #9356DC;
-  top: 25px;
-  right: 25px;
+  top: 15px;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(12deg);
+  opacity: 2;
+  animation: 500ms forwards;
 }
-.loader__item__couverts {
+.ldr__it__couv {
   position: absolute;
   z-index: 2;
-  color: #99E2D0;
-  top: 15px;
-  right: 15px;
+  color: #92D9E0;
+  top: 65px;
+  right: 35px;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-12deg);
+  opacity: 2;
+  animation: 300ms forwards;
 }
 
 .restaurants__choix__nouveau {
