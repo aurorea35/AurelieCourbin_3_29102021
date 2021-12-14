@@ -1,17 +1,14 @@
 .fonction
 {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
     margin: auto;
-    width: 25%;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     h2{
         margin: auto;
     }
     &__liste{
-        margin: auto;
+        margin: 0px 15px;
         padding-top: 20px; 
         &__image{
             display: flex;

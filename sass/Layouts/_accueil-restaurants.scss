@@ -1,23 +1,25 @@
 .restaurants
 {
     background-color: #e5e5e5;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    h2{
-        text-align: center;
-    }
-    &__choix{
+        &__choix{
         background-color: white;
         box-shadow: 1px 3px 4px 3px #e5e5e5;
         border-radius: 17px;
         margin: 15px auto;
-        width: 30%;
         height: 250px;
+        &__nouveau{
+            background-color: #99E2D0;
+            border-radius: 3px;
+            color: green;
+            position: absolute;
+            text-align: center;
+            margin: 4% 0% 0% 75%;
+            padding: 10px;
+            font-size: 12px;
+        }
         a{
             text-decoration: none;
         }
-        
         img{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
@@ -41,13 +43,9 @@
             &__like{
                 position: absolute;
                 cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 margin-left: 465px;
                 font-size: 21px;
                 color: black;
-                line-height: 45px;
                 margin-top: 10px;
             }
         }

@@ -3,16 +3,20 @@ html, body {
   font-family: roboto, sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
 h1 {
   font-family: shrikhand;
 }
 
 h3, p {
-  font-size: 14px;
   padding-left: 14px;
 }
 
 h3 {
+  font-weight: bolder;
   margin-bottom: 0px;
 }
 
@@ -105,24 +109,13 @@ button {
   animation: 300ms forwards;
 }
 
-.restaurants__choix__nouveau {
-  background-color: #99E2D0;
-  border-radius: 3px;
-  color: green;
-  position: absolute;
-  text-align: center;
-  margin: 10px 0px 0px 440px;
-  padding: 10px;
-  font-size: 12px;
-}
-
 .header__logo {
   width: 100%;
   height: 70px;
   text-align: center;
 }
 .header__logo img {
-  width: 10%;
+  width: 290px;
   margin-top: 10px;
 }
 .header__localisation {
@@ -158,18 +151,15 @@ button {
 
 .fonction {
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
   margin: auto;
-  width: 25%;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .fonction h2 {
   margin: auto;
 }
 .fonction__liste {
-  margin: auto;
+  margin: 0px 15px;
   padding-top: 20px;
 }
 .fonction__liste__image {
@@ -206,20 +196,23 @@ button {
 
 .restaurants {
   background-color: #e5e5e5;
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.restaurants h2 {
-  text-align: center;
 }
 .restaurants__choix {
   background-color: white;
   box-shadow: 1px 3px 4px 3px #e5e5e5;
   border-radius: 17px;
   margin: 15px auto;
-  width: 30%;
   height: 250px;
+}
+.restaurants__choix__nouveau {
+  background-color: #99E2D0;
+  border-radius: 3px;
+  color: green;
+  position: absolute;
+  text-align: center;
+  margin: 4% 0% 0% 75%;
+  padding: 10px;
+  font-size: 12px;
 }
 .restaurants__choix a {
   text-decoration: none;
@@ -248,13 +241,9 @@ button {
 .restaurants__choix__legende__like {
   position: absolute;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 465px;
   font-size: 21px;
   color: black;
-  line-height: 45px;
   margin-top: 10px;
 }
 
