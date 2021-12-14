@@ -9,8 +9,8 @@ button{
 
 .btn-arriere{
     position: absolute;
-    left: -10px;
-    top: 4px;  
+    left: 0px; /*Mettre -10px mais ne fonctionne pas quand je mets sur Visual*/
+    top: 0px;  /*Mettre 4px mais ne fonctionne pas quand je mets sur Visual*/
     color:black;
     font-size: 1.1em;
     line-height: 63px; 

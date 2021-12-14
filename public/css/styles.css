@@ -31,8 +31,10 @@ button {
 
 .btn-arriere {
   position: absolute;
-  left: -10px;
-  top: 4px;
+  left: 0px;
+  /*Mettre -10px mais ne fonctionne pas quand je mets sur Visual*/
+  top: 0px;
+  /*Mettre 4px mais ne fonctionne pas quand je mets sur Visual*/
   color: black;
   font-size: 1.1em;
   line-height: 63px;
@@ -109,6 +111,11 @@ button {
   animation: 300ms forwards;
 }
 
+.lieuphoto img {
+  width: 100%;
+}
+
+/*Ne fonctionne pas avec Visual*/
 .header__logo {
   width: 100%;
   height: 70px;
@@ -204,7 +211,7 @@ button {
   margin: 15px auto;
   height: 250px;
 }
-.restaurants__choix__nouveau {
+.restaurants__nouveau {
   background-color: #99E2D0;
   border-radius: 3px;
   color: green;
@@ -214,10 +221,10 @@ button {
   padding: 10px;
   font-size: 12px;
 }
-.restaurants__choix a {
+.restaurants a {
   text-decoration: none;
 }
-.restaurants__choix img {
+.restaurants img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
@@ -225,20 +232,20 @@ button {
   object-fit: cover;
   cursor: pointer;
 }
-.restaurants__choix__legende {
+.restaurants__legende {
   display: flex;
 }
-.restaurants__choix__legende__description {
+.restaurants__legende__description {
   cursor: pointer;
   color: black;
 }
-.restaurants__choix__legende__description h3 {
+.restaurants__legende__description h3 {
   margin: 5px 0px;
 }
-.restaurants__choix__legende__description p {
+.restaurants__legende__description p {
   margin-top: 5px;
 }
-.restaurants__choix__legende__like {
+.restaurants__legende__like {
   position: absolute;
   cursor: pointer;
   margin-left: 465px;
