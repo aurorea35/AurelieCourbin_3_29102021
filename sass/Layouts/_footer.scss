@@ -4,6 +4,7 @@
     color: white;
     text-align: center;
     margin-top: -20px;
+    padding-bottom: 10px;
     &__titre{
         h4{
             font-family: shrikhand;
@@ -17,8 +18,5 @@
     p a{
         color: white;
         text-decoration: none;
-    }
-    a{
-        margin-left: 10px;
     }
 }
