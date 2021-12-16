@@ -7,15 +7,18 @@ button{
     margin-top: 10px;
 }
 
-.btn-arriere{
+/*.btn-arriere{
     position: absolute;
-    left: 0px; /*Mettre -10px mais ne fonctionne pas quand je mets sur Visual*/
-    top: 0px;  /*Mettre 4px mais ne fonctionne pas quand je mets sur Visual*/
+    display: flex;
+    justify-content: space-between;
+    left: -10px; 
+    top: 4px;  
     color:black;
     font-size: 1.1em;
     line-height: 63px; 
     padding: 0 2% 0 5%;
-}
+} Ne fonctionne plus*/
+
 
 
 
