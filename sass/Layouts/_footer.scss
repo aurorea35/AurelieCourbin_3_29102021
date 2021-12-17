@@ -2,7 +2,6 @@
 {
     background-color: rgb(41, 40, 40);
     color: white;
-    text-align: center;
     margin-top: -20px;
     padding-bottom: 10px;
     &__titre{
@@ -10,6 +9,8 @@
             font-family: shrikhand;
             font-size: 20px;
             margin-top: 17px;
+            margin-left: 17px;
+            padding-top: 20px;
         }
     }
     i{
