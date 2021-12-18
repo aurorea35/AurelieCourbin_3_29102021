@@ -1,17 +1,39 @@
-.menu{
+.restaurant{
+    .menu{
     display: flex;
     flex-direction: column;
     background-color: #e5e5e5;
-    &__entree{
-        &__titre{
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-            border-radius: 15px;
-            box-shadow: 1px white;
+        h2{
             margin-top: 10px;
-            height: 75px;
-            width: 400px;
+            padding-left: 10px;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        &__entree, &__plat, &__dessert{
+            &__titre{
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin-top: 10px;
+                height: 75px;
+                width: 400px;
+                background-color: white;
+                border-radius: 15px;
+                width: 92%;
+                margin-left: 10px;
+                h3{
+                    margin-top: 12px;
+                }
+                p{
+                    margin-top: 5px; 
+                }
+                &__tarif{
+                    position: absolute;
+                    margin-left: 80%;
+                    margin-top: 11%;
+                    font-weight: bold;
+                }
+            }  
         }
     }
 }

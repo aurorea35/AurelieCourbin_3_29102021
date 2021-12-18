@@ -270,20 +270,40 @@ button {
   margin-top: 3%;
 }
 
-.menu {
+.restaurant .menu {
   display: flex;
   flex-direction: column;
   background-color: #e5e5e5;
 }
-.menu__entree__titre {
+.restaurant .menu h2 {
+  margin-top: 10px;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 20px;
+}
+.restaurant .menu__entree__titre, .restaurant .menu__plat__titre, .restaurant .menu__dessert__titre {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  border-radius: 15px;
-  box-shadow: 1px white;
   margin-top: 10px;
   height: 75px;
   width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  width: 92%;
+  margin-left: 10px;
+}
+.restaurant .menu__entree__titre h3, .restaurant .menu__plat__titre h3, .restaurant .menu__dessert__titre h3 {
+  margin-top: 12px;
+}
+.restaurant .menu__entree__titre p, .restaurant .menu__plat__titre p, .restaurant .menu__dessert__titre p {
+  margin-top: 5px;
+}
+.restaurant .menu__entree__titre__tarif, .restaurant .menu__plat__titre__tarif, .restaurant .menu__dessert__titre__tarif {
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 11%;
+  font-weight: bold;
 }
 
 /*Nom du restaurant + Coeur*/
@@ -291,19 +311,24 @@ button {
   background-color: #e5e5e5;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
-  display: flex;
   margin-top: -55px;
   position: absolute;
   width: 100%;
   justify-content: space-between;
 }
 .restaurant__titre {
-  margin-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -20px;
+  margin-top: 10px;
 }
-.restaurant__icone {
-  line-height: 4;
-  font-size: 18px;
-  margin-right: 30px;
+.restaurant__titre h1 {
+  font-weight: normal;
+}
+.restaurant__titre__icone {
+  line-height: 3;
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 .footer {
