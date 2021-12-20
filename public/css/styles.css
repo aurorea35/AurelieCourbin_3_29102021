@@ -312,7 +312,7 @@ button {
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   margin-top: -55px;
-  position: absolute;
+  position: relative;
   width: 100%;
   justify-content: space-between;
 }
