@@ -5,9 +5,16 @@
     background-color: #e5e5e5;
         h2{
             margin-top: 10px;
-            padding-left: 10px;
+            margin-left: 10px;
             font-weight: normal;
             font-size: 20px;
+            width: fit-content;
+        }
+        h2::after{
+            content:"";
+            border-bottom: 2px solid #99E2D0;
+            display: block;
+            width: 40px;
         }
         &__entree, &__plat, &__dessert{
             &__titre{

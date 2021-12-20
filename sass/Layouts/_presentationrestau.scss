@@ -1,8 +1,8 @@
 /*Nom du restaurant + Coeur*/
 .restaurant{
     background-color: #e5e5e5;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     margin-top: -55px;
     position: relative;
     width: 100%;
@@ -12,9 +12,9 @@
             font-weight: normal;
         }
         display: flex;
-        justify-content: space-around;
-        margin-left: -20px;
-        margin-top: 10px;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 15px;
         &__icone{
             line-height: 3;
             font-size: 25px;
@@ -22,6 +22,7 @@
         }
     }
 }
+
 
 
     
