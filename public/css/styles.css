@@ -184,10 +184,14 @@ h3 {
   margin: 0px 15px;
   padding-top: 20px;
 }
+.fonction__liste :hover {
+  background-color: #9356DC21;
+  transform: scale(1);
+}
 .fonction__liste__image {
   display: flex;
   align-items: center;
-  border: 1px #e5e5e5 solid;
+  border: 1px #e5e5e5;
   border-radius: 20px;
   box-shadow: 1px 3px 4px 3px #797777;
   background-color: #e5e5e5;
