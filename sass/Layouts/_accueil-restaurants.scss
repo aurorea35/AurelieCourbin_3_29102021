@@ -1,10 +1,10 @@
 .restaurants
 {
-    background-color: #e5e5e5;
+    background-color: $clr-ft-img;
     padding: 20px 15px 25px 15px;
     &__choix{
         background-color: $clr-qua;
-        box-shadow: 1px 3px 4px 3px #e5e5e5;
+        box-shadow: 1px 3px 4px 3px $clr-ft-img;
         border-radius: 17px;
         margin-top: 15px auto;
         height: 250px;
