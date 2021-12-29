@@ -29,9 +29,12 @@
                 margin-left: 30px;
                 margin-right: 30px;
                 font-size: 20px;
+                &:hover{
+                    color: #9356;
+                }
             }
             &__nombre{
-                background-color: #9356DC;
+                background-color: $clr-pri;
                 color: white;
                 line-height: 0.5;
                 border-radius: 25px;

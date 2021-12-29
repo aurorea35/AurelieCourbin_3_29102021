@@ -1,4 +1,5 @@
 /*Page d'accueil*/
+/*Couleurs*/
 html, body {
   font-family: roboto, sans-serif;
 }
@@ -205,6 +206,9 @@ h3 {
   margin-right: 30px;
   font-size: 20px;
 }
+.fonction__liste__image i:hover {
+  color: #9356;
+}
 .fonction__liste__image__nombre {
   background-color: #9356DC;
   color: white;
@@ -364,7 +368,5 @@ h3 {
   color: white;
   text-decoration: none;
 }
-
-/*Couleurs*/
 
 /*# sourceMappingURL=styles.css.map */

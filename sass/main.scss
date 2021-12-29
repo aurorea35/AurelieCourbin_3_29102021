@@ -1,4 +1,7 @@
 /*Page d'accueil*/
+@import "./Utils/variables";
+@import "./Utils/maps";
+@import "./Utils/mixins";
 @import "./Base/base";
 @import "./Components/boutons";
 @import "./Components/loader";
@@ -10,9 +13,8 @@
 @import "./Layouts/presentationrestau";
 @import "./Layouts/footer";
 @import "./Utils/keyframes";
-@import "./Utils/maps";
-@import "./Utils/mixins";
-@import "./Utils/variables";
+
+
 
 
 
