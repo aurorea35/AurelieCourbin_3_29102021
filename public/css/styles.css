@@ -204,10 +204,10 @@ h3 {
   color: #949090;
   margin-left: 30px;
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .fonction__liste__image i:hover {
-  color: #9356;
+  color: #9356DC;
 }
 .fonction__liste__image__nombre {
   background-color: #9356DC;
