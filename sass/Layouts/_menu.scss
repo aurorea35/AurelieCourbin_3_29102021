@@ -12,7 +12,7 @@
         }
         h2::after{
             content: "";
-            border-bottom: 2px solid #99E2D0;
+            border-bottom: 2px solid $clr-ter;
             display: block;
             width: 40px;
         }
@@ -24,7 +24,7 @@
                 margin-top: 10px;
                 height: 75px;
                 width: 400px;
-                background-color: white;
+                background-color: $clr-qua;
                 border-radius: 15px;
                 width: 92%;
                 margin-left: 10px;

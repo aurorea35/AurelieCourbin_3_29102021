@@ -3,15 +3,15 @@
     background-color: #e5e5e5;
     padding: 20px 15px 25px 15px;
     &__choix{
-        background-color: white;
+        background-color: $clr-qua;
         box-shadow: 1px 3px 4px 3px #e5e5e5;
         border-radius: 17px;
         margin-top: 15px auto;
         height: 250px;
         &__nouveau{
-            background-color: #99E2D0;
+            background-color: $clr-ter;
             border-radius: 3px;
-            color: green;
+            color: $clr-six;
             position: absolute;
             text-align: center;
             margin-top: 20px;
@@ -34,7 +34,7 @@
             display: flex;
             &__description{
                 cursor: pointer;
-                color: black;
+                color: $clr-cin;
                 h3{
                     margin: 5px 0px;
                 }
@@ -46,7 +46,7 @@
                 position: absolute;
                 cursor: pointer;
                 font-size: 21px;
-                color: black;
+                color: $clr-cin;
                 margin-top: 15px;
                 right: 50px;
             }

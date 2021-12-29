@@ -22,11 +22,11 @@
         height: 100px;
         width: 100px;
         border-radius: 60px;
-        background: white;
+        background: $clr-qua;
         &__feui{
             position: absolute;
             z-index: 3;
-            color: #FF79DA;
+            color: $clr-sec;
             &--1{
                 right: 6px;
                 top: 37px;
@@ -46,7 +46,7 @@
         &__verre{
             position: absolute;
             z-index: 2;
-            color: #9356DC;
+            color: $clr-pri;
             top: 15px;
             right: 30px;
             justify-content: center;
