@@ -7,6 +7,9 @@
     h2{
         margin: auto;
     }
+    @include tablet {
+        width: 80%;
+    }
     &__liste{
         @include desktop {
             display: flex;
@@ -40,6 +43,9 @@
                 font-size: 17px;
                 &:hover{
                     color: $clr-pri;
+                }
+                @include desktop {
+                    padding-left: 15px;
                 }
             }
             &__nombre{

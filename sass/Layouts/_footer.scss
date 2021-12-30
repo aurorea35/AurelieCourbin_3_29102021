@@ -4,6 +4,12 @@
     color: $clr-qua;
     margin-top: -20px;
     padding-bottom: 10px;
+    @include desktop {
+        text-align: center;
+    }
+    @include tablet {
+        text-align: center;
+    }
     &__titre{
         h4{
             font-family: shrikhand;
