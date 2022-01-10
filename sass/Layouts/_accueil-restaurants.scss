@@ -28,7 +28,7 @@
         margin-top: 15px;
         height: 250px;
         @include desktop {
-            display: flex;
+            /*display: flex*/
             width: 43%;
             margin: 20px;
             height: 330px;
@@ -47,16 +47,19 @@
             font-size: 12px;
             right: 35px;
             @include desktop {
-                width: 5%;
+                width: 9%;
                 margin-left: 95%;
+                margin-top: 0px;
                 position: relative;
                 text-align: right;
             }
             @include tablet {
-                width: 6%;
-                margin-left: 93%;
+                width: 7%;
+                margin-left: 90%;
+                margin-top: 0px;
                 position: relative;
                 text-align: right;
+                padding-top: 2%;
             }
         }
         a{
@@ -75,7 +78,7 @@
                 margin-top: -55px;
             }
             @include tablet {
-                margin-top: -34px;
+                margin-top: -34spx;
             }
         }
         &__legende{
@@ -116,3 +119,4 @@
         }
     }
 }
+

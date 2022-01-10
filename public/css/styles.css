@@ -57,6 +57,19 @@ h3 {
   width: 170px;
   height: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .menu__bouton {
+    margin-right: 17px;
+    margin-top: 155px;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__bouton {
+    margin-left: 35%;
+    margin-top: 6%;
+  }
+}
 
 .ldr {
   position: fixed;
@@ -182,11 +195,6 @@ h3 {
 .fonction h2 {
   margin: auto;
 }
-@media screen and (min-width: 768px) {
-  .fonction {
-    width: 80%;
-  }
-}
 .fonction__liste {
   margin: 0px 15px;
   padding-top: 20px;
@@ -197,10 +205,6 @@ h3 {
     justify-content: space-around;
     padding-top: 0px;
   }
-}
-.fonction__liste :hover {
-  background-color: #9356DC21;
-  /*transform: scale(1);*/
 }
 .fonction__liste__image {
   display: flex;
@@ -216,7 +220,7 @@ h3 {
 @media screen and (min-width: 1024px) {
   .fonction__liste__image {
     width: 100%;
-    margin: 35px;
+    margin: 35px 10px;
   }
 }
 .fonction__liste__image i {
@@ -225,12 +229,10 @@ h3 {
   margin-right: 30px;
   font-size: 17px;
 }
-.fonction__liste__image i:hover {
-  color: #9356DC;
-}
 @media screen and (min-width: 1024px) {
   .fonction__liste__image i {
-    padding-left: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 .fonction__liste__image__nombre {
@@ -251,11 +253,16 @@ h3 {
 @media screen and (min-width: 1024px) {
   .fonction__liste__image__titre {
     height: 21.3px;
-    width: 208.5px;
+    width: 198.5px;
     margin: auto;
-    padding-right: 130px;
     font-size: 18px;
   }
+}
+.fonction__liste__image:hover {
+  background-color: #9356DC21;
+}
+.fonction__liste__image:hover i {
+  color: #9356DC;
 }
 
 .restaurants {
@@ -294,7 +301,7 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   .restaurants__choix {
-    display: flex;
+    /*display: flex*/
     width: 43%;
     margin: 20px;
     height: 330px;
@@ -318,18 +325,21 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   .restaurants__choix__nouveau {
-    width: 5%;
+    width: 9%;
     margin-left: 95%;
+    margin-top: 0px;
     position: relative;
     text-align: right;
   }
 }
 @media screen and (min-width: 768px) {
   .restaurants__choix__nouveau {
-    width: 6%;
-    margin-left: 93%;
+    width: 7%;
+    margin-left: 90%;
+    margin-top: 0px;
     position: relative;
     text-align: right;
+    padding-top: 2%;
   }
 }
 .restaurants__choix a {
@@ -350,7 +360,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .restaurants__choix__marge {
-    margin-top: -34px;
+    margin-top: -34spx;
   }
 }
 .restaurants__choix__legende {
@@ -422,7 +432,6 @@ h3 {
   cursor: pointer;
   margin-top: 10px;
   height: 75px;
-  width: 400px;
   background-color: white;
   border-radius: 15px;
   width: 92%;
@@ -451,6 +460,16 @@ h3 {
   width: 100%;
   justify-content: space-between;
 }
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    margin-top: -850px;
+    position: absolute;
+    width: 85%;
+    margin-left: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .restaurant__titre {
   display: flex;
   justify-content: space-between;
@@ -458,18 +477,16 @@ h3 {
   margin-right: 15px;
 }
 .restaurant__titre h1 {
-  font-weight: normal;
+  font-weight: bold;
 }
 .restaurant__titre__icone {
-  line-height: 3;
-  font-size: 25px;
-  margin-right: 10px;
+  line-height: 4.3;
 }
 
 .footer {
   background-color: #292828;
   color: white;
-  margin-top: -20px;
+  margin-top: -24px;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 1024px) {

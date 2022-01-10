@@ -7,18 +7,24 @@
     position: relative;
     width: 100%;
     justify-content: space-between;
+    @include desktop {
+        margin-top: -850px;
+        position: absolute;
+        width: 85%;
+        margin-left: 150px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     &__titre{
         h1{
-            font-weight: normal;
+            font-weight: bold;
         }
         display: flex;
         justify-content: space-between;
         margin-left: 10px;
         margin-right: 15px;
         &__icone{
-            line-height: 3;
-            font-size: 25px;
-            margin-right: 10px;
+            line-height: 4.3;
         }
     }
 }
