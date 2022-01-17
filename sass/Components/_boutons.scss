@@ -34,13 +34,9 @@
         width: 170px;
         height: 20px;
         @include desktop {
-            margin-right: 17px;
-            margin-top: 155px;
-            margin-left: 0%;
-        }
-        @include tablet {
-            margin-left: 35%;
-            margin-top: 6%;
+            margin-bottom: 14px;
+            margin-right: 5px;
+            margin-left: 20px;
         }
     }
 }

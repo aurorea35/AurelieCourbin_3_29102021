@@ -1,41 +1,18 @@
-.restaurants
-{
+.restaurants{
     background-color: $clr-ft-img;
     padding: 20px 15px 25px 15px;
-    @include desktop {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 98%;
-        margin: auto;
-        h2{
-            width: 100%;
-            text-align: center;
-        }
-    }
-    @include tablet {
-        width: 80%;
-        margin: auto;
-        h2{
-            width: 100%;
-            text-align: center;
-        }
-    }
-    &__choix{
+    &__choix2{
         background-color: $clr-qua;
         box-shadow: 1px 3px 4px 3px $clr-ft-img;
         border-radius: 17px;
         margin-top: 15px;
-        height: 250px;
-        @include desktop {
-            /*display: flex*/
-            width: 43%;
-            margin: 20px;
-            height: 330px;
-        }
-        @include tablet {
-            margin-top: 35px;
-        }
+        height: 320px;
+        background-size: cover;
+        position: relative;
+        &__backg1{ background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");  }
+        &__backg2{ background-image: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");  }
+        &__backg3{ background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");  }
+        &__backg4{ background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");  }
         &__nouveau{
             background-color: $clr-ter;
             border-radius: 3px;
@@ -46,24 +23,11 @@
             padding: 10px;
             font-size: 12px;
             right: 35px;
-            @include desktop {
-                width: 9%;
-                margin-left: 95%;
-                margin-top: 0px;
-                position: relative;
-                text-align: right;
-            }
-            @include tablet {
-                width: 7%;
-                margin-left: 90%;
-                margin-top: 0px;
-                position: relative;
-                text-align: right;
-                padding-top: 2%;
-            }
         }
         a{
             text-decoration: none;
+            width: 100%;
+            height: 100%;
         }
         img{
             border-top-left-radius: 15px;
@@ -73,22 +37,14 @@
             object-fit: cover;
             cursor: pointer;
         }
-        &__marge{
-            @include desktop {
-                margin-top: -55px;
-            }
-            @include tablet {
-                margin-top: -34spx;
-            }
-        }
         &__legende{
             display: flex;
-            @include desktop {
-                justify-content: space-between;
-            }
-            @include tablet {
-                justify-content: space-between;
-            }
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 100%;
             &__description{
                 cursor: pointer;
                 color: $clr-cin;
@@ -106,17 +62,9 @@
                 color: $clr-cin;
                 margin-top: 15px;
                 right: 50px;
-                @include desktop {
-                    display: flex;
-                    position: relative;
-                    right: 37px;
-                }
-                @include tablet {
-                    position: relative;
-                    right: 47px;
-                }
             }
         }
     }
 }
+  
 
