@@ -40,6 +40,9 @@
         cursor: pointer;
         width: 170px;
         height: 20px;
+        @include desktop{
+            margin: 30px auto;
+        }
     }
 }
 
