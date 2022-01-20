@@ -10,13 +10,20 @@
 
 .btn-arriere{
     position: absolute;
-    justify-content: space-between;
     left: -10px; 
     top: 4px;  
     color: $clr-cin;
     font-size: 1.1em;
     line-height: 63px; 
     padding: 0 2% 0 5%;
+    @include desktop{
+        left: initial;
+        padding: 0 2%;
+    }
+    @include tablet{
+        left: initial;
+        padding: 0 2%;
+    }
 } 
 
 .menu{
@@ -33,11 +40,6 @@
         cursor: pointer;
         width: 170px;
         height: 20px;
-        @include desktop {
-            margin-bottom: 14px;
-            margin-right: 5px;
-            margin-left: 20px;
-        }
     }
 }
 

@@ -3,15 +3,15 @@ html, body
     font-family: $ft-roboto;
 }
 
-body
+.body-restaurant
 {
     margin: 0px;
     @include desktop{
-        width: 80%;
-        margin: auto;
+        max-width: 1280px;
+        margin: 0 auto;
     }
     @include tablet{
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 }

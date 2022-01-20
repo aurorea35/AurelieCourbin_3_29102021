@@ -1,67 +1,99 @@
 .restaurants{
     background-color: $clr-ft-img;
     padding: 20px 15px 25px 15px;
-    &__choix2{
-        background-color: $clr-qua;
-        box-shadow: 1px 3px 4px 3px $clr-ft-img;
-        border-radius: 17px;
-        margin-top: 15px;
-        height: 320px;
-        background-size: cover;
-        position: relative;
-        &__backg1{ background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");  }
-        &__backg2{ background-image: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");  }
-        &__backg3{ background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");  }
-        &__backg4{ background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");  }
-        &__nouveau{
-            background-color: $clr-ter;
-            border-radius: 3px;
-            color: $clr-six;
-            position: absolute;
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            font-size: 12px;
-            right: 35px;
-        }
-        a{
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-        }
-        img{
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            width: 100%;
-            height: 75%;
-            object-fit: cover;
-            cursor: pointer;
-        }
-        &__legende{
+    @include desktop{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    @include tablet{
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+    h2{
+        text-align: center;
+    }
+    &__restau{
+        width: 100%;
+        @include desktop{
             display: flex;
-            background-color: white;
-            position: absolute;
-            bottom: 0;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            width: 100%;
-            &__description{
-                cursor: pointer;
-                color: $clr-cin;
-                h3{
-                    margin: 5px 0px;
-                }
-                p{
-                    margin-top: 5px;
-                }
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        @include tablet{
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        &__choix2{
+            background-color: $clr-qua;
+            box-shadow: 1px 3px 4px 3px $clr-ft-img;
+            border-radius: 17px;
+            margin-top: 15px;
+            height: 320px;
+            background-size: cover;
+            position: relative;
+            &__backg1{ background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");  }
+            &__backg2{ background-image: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");  }
+            &__backg3{ background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");  }
+            &__backg4{ background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");  }
+            @include desktop{
+                width: 48%;
+                margin: 10px auto;
             }
-            &__like{
+            @include tablet{
+                width: 40%;
+                margin: 10px auto;
+            }
+            &__nouveau{
+                background-color: $clr-ter;
+                border-radius: 3px;
+                color: $clr-six;
                 position: absolute;
+                text-align: center;
+                margin-top: 20px;
+                padding: 10px;
+                font-size: 12px;
+                right: 35px;
+            }
+            a{
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+            }
+            img{
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                width: 100%;
+                height: 75%;
+                object-fit: cover;
                 cursor: pointer;
-                font-size: 21px;
-                color: $clr-cin;
-                margin-top: 15px;
-                right: 50px;
+            }
+            &__legende{
+                display: flex;
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                width: 100%;
+                &__description{
+                    cursor: pointer;
+                    color: $clr-cin;
+                    h3{
+                        margin: 5px 0px;
+                    }
+                    p{
+                        margin-top: 5px;
+                    }
+                }
+                &__like{
+                    position: absolute;
+                    cursor: pointer;
+                    font-size: 21px;
+                    color: $clr-cin;
+                    margin-top: 15px;
+                    right: 50px;
+                }
             }
         }
     }

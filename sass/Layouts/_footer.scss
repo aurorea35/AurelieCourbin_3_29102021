@@ -4,10 +4,10 @@
     color: $clr-qua;
     margin-top: -24px;
     padding-bottom: 10px;
-    @include desktop {
+    @include desktop{
         text-align: center;
     }
-    @include tablet {
+    @include tablet{
         text-align: center;
     }
     &__titre{

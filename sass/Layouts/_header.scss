@@ -16,6 +16,14 @@
         height: 40px;
         padding-top: 2px;
         padding-bottom: 19px;
+        @include desktop{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        @include tablet{
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
         &__gps{
             font-size: 20px;
             margin-top: 8px;
@@ -35,9 +43,16 @@
         margin-top: -17px;
         padding-top: 15px;
         padding-bottom: 45px;
+        @include desktop{
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        @include tablet{
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
         h2{
             font-size: 20px;
         }
     }
-
 }
