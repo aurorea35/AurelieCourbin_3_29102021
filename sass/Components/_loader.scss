@@ -1,71 +1,133 @@
-.ldr{
+.loader {
     position: fixed;
     display: flex;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    flex-direction: column;
+    background: #000000ab;
+    font-size: 1.9em; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;   
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    animation: 3s forwards;
-    &__rd{
-        &--1{
-            animation: 500ms forwards;
+    animation: loader-vis 3s forwards;
+    &__rel {
+      position: relative;
+      height: 130px;
+      width: 130px;
+      background: white;
+      border-radius: 50%;
+      .ldr-lumi {
+      position: absolute;
+      height: 126px;
+      width: 126px;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+      opacity: 0;
+        &--1 {
+          background: $clr-sec;
+          animation: appar 500ms forwards;
         }
-        &--2{
-            animation: 200ms 1.5s forwards;
+        &--2 {
+          background: $clr-ter; 
+          animation: appar 500ms .5s forwards;
         }
-    }
-    &__it{   
-        position: relative;
-        height: 100px;
-        width: 100px;
-        border-radius: 60px;
-        background: $clr-qua;
-        &__feui{
-            position: absolute;
-            z-index: 3;
+        &--3 {
+          background: $clr-pri;
+          animation: appar 500ms 1s forwards;
+        }
+        &--4 {
+          background: rgb(255,134,222);
+          background: linear-gradient(90deg, rgba(255,134,222,1) 25%, rgba(153,226,208,1) 50%, rgba(147,86,220,1) 75%);
+          animation: appar 100ms 1.5s forwards, lumi-rotat 600ms 1.5s infinite; /* Sur la version finale, le temps de chargement déterminera la durée de rotation */
+        }
+      }
+      .ldr-plat {
+        position: absolute;
+        z-index: 2;
+        top: 25px;
+        left: 25px;
+        box-sizing: border-box;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: inset 0px 0px 12px -6px rgb(0, 0, 0);
+        &__feui {
+          position: absolute;
+          z-index: 3;
+          &--1 {
+            right: 10px;
+            top: 10px;
+            transform: rotate(-50deg);
+            color: $clr-ter;
+            opacity: 0;
+            animation: appar 150ms .5s forwards, feui-choc2 150ms 1.5s;
+          }
+          &--2 {
+            right: 25px;
+            top: 7px;
+            transform: rotate(-80deg);
+            color: darken($clr-ter, 20);
+            z-index: 4;
+            opacity: 0;
+            animation: appar 150ms .6s forwards, feui-choc1 150ms 1.4s;
+          }
+          &--3 {
+            right: 11px;
+            top: 17px;
+            color: darken($clr-ter, 40);
+            transform: rotate(90deg) rotateY(-30deg);
+            z-index: 4;
+            opacity: 0;
+            animation: appar 250ms .7s forwards, feui-glisse 1300ms 1.6s cubic-bezier(.37,1.25,.92,1) forwards;
+          }
+        }
+        &__verre {
+          position: absolute;
+          border-radius: 50%;
+          height: 10px;
+          width: 10px;
+          opacity: 0;
+          z-index: 3;
+          color: $clr-sec;
+          &--1 {
+            right: 15px;
+            top: 36px;
+            transform: rotate(360deg);
             color: $clr-sec;
-            &--1{
-                right: 6px;
-                top: 37px;
-                transform: rotate(-50deg);
-                opacity: 2;
-                animation: 150ms .5s forwards;
-            }
-            &--2{
-                right: 60px;
-                top: 40px;
-                z-index: 4;
-                transform: rotate(-80deg);
-                opacity: 2;
-                animation: 150ms .6s forwards;
-            }
+            z-index: 4;
+            width: 12px;
+            height: 12px;
+            animation: appar 100ms 1s forwards, rais-choc 500ms 1.45s cubic-bezier(.13,1.15,.92,1) forwards;
+          }
         }
-        &__verre{
-            position: absolute;
-            z-index: 2;
-            color: $clr-pri;
-            top: 15px;
-            right: 30px;
-            justify-content: center;
-            align-items: center;
-            transform: rotate(12deg);
-            opacity: 2;
-            animation: 500ms forwards;
+        &__tart {
+          position: absolute;
+          top: 25px;
+          left: 5px;
+          transform: rotate(210deg);
+          color: lighten($clr-sec, 10);
+          opacity: 0;
+          animation: appar 500ms forwards;
         }
-        &__couv{
-            position: absolute;
-            z-index: 2;
-            color: $clr-ld-couv;
-            top: 65px;
-            right: 35px;
-            justify-content: center;
-            align-items: center;
-            transform: rotate(-12deg);
-            opacity: 2;
-            animation: 300ms forwards;
+        &__couv {
+          position: absolute;
+          border-radius: 50%;
+          height: 5px;
+          width: 5px;
+          z-index: 4;
+          opacity: 0;
+          &--1 {
+          top: 45px;
+          right: 48px;
+          color: darken($clr-pri, 10);
+          animation: appar 100ms .2s forwards;
+           
+          }
         }
+      }
     }
-}
+  }

@@ -1,0 +1,56 @@
+@keyframes loader-vis { 
+    0% {visibility: visible;}
+    85% {opacity: 1;}
+    100% {visibility: hidden; opacity: 0;}
+  }
+   
+  @keyframes lumi-rotat {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+  }
+    
+  @keyframes feui-glisse {
+   from {transform: translate(0) rotate(90deg) rotateY(-30deg);}
+    to {transform: translate(1px, 3px) rotate(125deg) rotateY(0deg);}
+  }
+    
+  @keyframes feui-choc1 {
+    0% {transform: rotate(-80deg);}
+    50% {transform: rotate(-76deg);}
+    100% {transform: rotate(-80deg);}
+  }
+    
+  @keyframes feui-choc2 {
+    0% {transform: rotate(-50deg);}
+    50% {transform: rotate(-46deg);}
+    100% {transform: rotate(-50deg);}
+  }
+    
+  @keyframes verre-rebond {
+    0% {transform: translate(0);}
+    32% {transform: translate(2px, 14px);}
+    45% {transform: translate(3px, 12px);}
+    55% {transform: translate(5px, 15px);}
+    100% {transform: translate(10px, 15px);}
+  }
+    
+  @keyframes verre-roule {
+    from {transform: translate(0);}
+    to {transform: translate(4px, 5px);}
+  }
+    
+  @keyframes verre-choc {
+    from {transform: translate(0);}
+    to {transform: translate(3px, 3px);}
+  }
+  
+  // AUTRES
+  @keyframes valid {
+    from {transform: rotate(-360deg);}
+    to {transform: rotate(0);}
+  }
+  
+  @keyframes appar {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

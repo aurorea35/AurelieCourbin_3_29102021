@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Page d'accueil*/
 /*Polices*/
 /*Couleurs*/
@@ -27,6 +28,16 @@ h1 {
 
 h3, p {
   padding-left: 14px;
+}
+@media screen and (min-width: 1024px) {
+  h3, p {
+    padding-left: 4px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3, p {
+    padding-left: 4px;
+  }
 }
 
 h3 {
@@ -124,74 +135,138 @@ h3 {
   }
 }
 
-.ldr {
+.loader {
   position: fixed;
   display: flex;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+  flex-direction: column;
+  background: #000000ab;
+  font-size: 1.9em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  animation: 3s forwards;
+  animation: loader-vis 3s forwards;
 }
-.ldr__rd--1 {
-  animation: 500ms forwards;
-}
-.ldr__rd--2 {
-  animation: 200ms 1.5s forwards;
-}
-.ldr__it {
+.loader__rel {
   position: relative;
-  height: 100px;
-  width: 100px;
-  border-radius: 60px;
+  height: 130px;
+  width: 130px;
   background: white;
+  border-radius: 50%;
 }
-.ldr__it__feui {
+.loader__rel .ldr-lumi {
   position: absolute;
+  height: 126px;
+  width: 126px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  opacity: 0;
+}
+.loader__rel .ldr-lumi--1 {
+  background: #FF79DA;
+  animation: appar 500ms forwards;
+}
+.loader__rel .ldr-lumi--2 {
+  background: #99E2D0;
+  animation: appar 500ms 0.5s forwards;
+}
+.loader__rel .ldr-lumi--3 {
+  background: #9356DC;
+  animation: appar 500ms 1s forwards;
+}
+.loader__rel .ldr-lumi--4 {
+  background: #ff86de;
+  background: linear-gradient(90deg, #ff86de 25%, #99e2d0 50%, #9356dc 75%);
+  animation: appar 100ms 1.5s forwards, lumi-rotat 600ms 1.5s infinite;
+  /* Sur la version finale, le temps de chargement déterminera la durée de rotation */
+}
+.loader__rel .ldr-plat {
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 25px;
+  box-sizing: border-box;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: inset 0px 0px 12px -6px black;
+}
+.loader__rel .ldr-plat__feui {
+  position: absolute;
+  z-index: 3;
+}
+.loader__rel .ldr-plat__feui--1 {
+  right: 10px;
+  top: 10px;
+  transform: rotate(-50deg);
+  color: #99E2D0;
+  opacity: 0;
+  animation: appar 150ms 0.5s forwards, feui-choc2 150ms 1.5s;
+}
+.loader__rel .ldr-plat__feui--2 {
+  right: 25px;
+  top: 7px;
+  transform: rotate(-80deg);
+  color: #4acbab;
+  z-index: 4;
+  opacity: 0;
+  animation: appar 150ms 0.6s forwards, feui-choc1 150ms 1.4s;
+}
+.loader__rel .ldr-plat__feui--3 {
+  right: 11px;
+  top: 17px;
+  color: #278870;
+  transform: rotate(90deg) rotateY(-30deg);
+  z-index: 4;
+  opacity: 0;
+  animation: appar 250ms 0.7s forwards, feui-glisse 1300ms 1.6s cubic-bezier(0.37, 1.25, 0.92, 1) forwards;
+}
+.loader__rel .ldr-plat__verre {
+  position: absolute;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  opacity: 0;
   z-index: 3;
   color: #FF79DA;
 }
-.ldr__it__feui--1 {
-  right: 6px;
-  top: 37px;
-  transform: rotate(-50deg);
-  opacity: 2;
-  animation: 150ms 0.5s forwards;
-}
-.ldr__it__feui--2 {
-  right: 60px;
-  top: 40px;
+.loader__rel .ldr-plat__verre--1 {
+  right: 15px;
+  top: 36px;
+  transform: rotate(360deg);
+  color: #FF79DA;
   z-index: 4;
-  transform: rotate(-80deg);
-  opacity: 2;
-  animation: 150ms 0.6s forwards;
+  width: 12px;
+  height: 12px;
+  animation: appar 100ms 1s forwards, rais-choc 500ms 1.45s cubic-bezier(0.13, 1.15, 0.92, 1) forwards;
 }
-.ldr__it__verre {
+.loader__rel .ldr-plat__tart {
   position: absolute;
-  z-index: 2;
-  color: #9356DC;
-  top: 15px;
-  right: 30px;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(12deg);
-  opacity: 2;
-  animation: 500ms forwards;
+  top: 25px;
+  left: 5px;
+  transform: rotate(210deg);
+  color: #fface8;
+  opacity: 0;
+  animation: appar 500ms forwards;
 }
-.ldr__it__couv {
+.loader__rel .ldr-plat__couv {
   position: absolute;
-  z-index: 2;
-  color: #92D9E0;
-  top: 65px;
-  right: 35px;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(-12deg);
-  opacity: 2;
-  animation: 300ms forwards;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  z-index: 4;
+  opacity: 0;
+}
+.loader__rel .ldr-plat__couv--1 {
+  top: 45px;
+  right: 48px;
+  color: #782cd3;
+  animation: appar 100ms 0.2s forwards;
 }
 
 .lieu img {
@@ -285,6 +360,18 @@ h3 {
   margin: 0px 15px;
   padding-top: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .fonction__liste {
+    display: flex;
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonction__liste {
+    display: flex;
+    margin: 0px;
+  }
+}
 .fonction__liste__image {
   display: flex;
   align-items: center;
@@ -298,22 +385,20 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   .fonction__liste__image {
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 30%;
   }
 }
 @media screen and (min-width: 768px) {
   .fonction__liste__image {
-    width: 50%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 .fonction__liste__image i {
   color: #949090;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 17px;
   width: 21px;
 }
@@ -592,6 +677,106 @@ h3 {
 .footer p a {
   color: white;
   text-decoration: none;
+}
+
+@keyframes loader-vis {
+  0% {
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes lumi-rotat {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes feui-glisse {
+  from {
+    transform: translate(0) rotate(90deg) rotateY(-30deg);
+  }
+  to {
+    transform: translate(1px, 3px) rotate(125deg) rotateY(0deg);
+  }
+}
+@keyframes feui-choc1 {
+  0% {
+    transform: rotate(-80deg);
+  }
+  50% {
+    transform: rotate(-76deg);
+  }
+  100% {
+    transform: rotate(-80deg);
+  }
+}
+@keyframes feui-choc2 {
+  0% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(-46deg);
+  }
+  100% {
+    transform: rotate(-50deg);
+  }
+}
+@keyframes verre-rebond {
+  0% {
+    transform: translate(0);
+  }
+  32% {
+    transform: translate(2px, 14px);
+  }
+  45% {
+    transform: translate(3px, 12px);
+  }
+  55% {
+    transform: translate(5px, 15px);
+  }
+  100% {
+    transform: translate(10px, 15px);
+  }
+}
+@keyframes verre-roule {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(4px, 5px);
+  }
+}
+@keyframes verre-choc {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(3px, 3px);
+  }
+}
+@keyframes valid {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes appar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
