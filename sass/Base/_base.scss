@@ -24,12 +24,6 @@ h1
 h3, p
 {
     padding-left: 14px;
-    @include desktop{
-        padding-left: 4px;
-    }
-    @include tablet{
-        padding-left: 4px;
-    }
 }
 
 h3

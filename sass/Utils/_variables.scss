@@ -8,7 +8,12 @@ $clr-ter: #99E2D0;
 $clr-qua: white;
 $clr-cin: black;
 $clr-six: green;
-$clr-button: linear-gradient($clr-sec 0%, $clr-pri 100%);
+$clr-button: linear-gradient(176deg, $clr-sec 0%, $clr-pri 100%);
 $clr-hover: #9356DC21;
 $clr-ft-img: #e5e5e5;
 $clr-header: #cfcfcf;
+$clr-coeur: linear-gradient(176deg, $clr-pri 0%, $clr-sec 100%);
+
+/*Animations*/
+$cr-cubic: cubic-bezier(.55,1.2,.93,1);
+$cr-duree: 600ms;

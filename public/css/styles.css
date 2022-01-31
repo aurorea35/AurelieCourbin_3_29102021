@@ -2,6 +2,7 @@
 /*Page d'accueil*/
 /*Polices*/
 /*Couleurs*/
+/*Animations*/
 html, body {
   font-family: "Roboto", sans-serif;
 }
@@ -28,16 +29,6 @@ h1 {
 
 h3, p {
   padding-left: 14px;
-}
-@media screen and (min-width: 1024px) {
-  h3, p {
-    padding-left: 4px;
-  }
-}
-@media screen and (min-width: 768px) {
-  h3, p {
-    padding-left: 4px;
-  }
 }
 
 h3 {
@@ -74,7 +65,7 @@ h3, p {
 }
 @media screen and (min-width: 768px) {
   h3, p {
-    font-size: 1em;
+    font-size: 15px;
   }
 }
 
@@ -83,11 +74,17 @@ h3 {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+}
+
 .button {
   border: 10px;
   border-radius: 30px;
   padding: 15px;
-  background-image: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  background-image: linear-gradient(176deg, #FF79DA 0%, #9356DC 100%);
   color: white;
   margin-top: 10px;
   cursor: pointer;
@@ -120,7 +117,7 @@ h3 {
   border: 10px;
   border-radius: 30px;
   padding: 15px;
-  background-image: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  background-image: linear-gradient(176deg, #FF79DA 0%, #9356DC 100%);
   color: white;
   margin-top: 25px;
   margin-left: 80px;
@@ -295,6 +292,7 @@ h3 {
   display: flex;
   justify-content: center;
   background-color: #cfcfcf;
+  box-shadow: 0 5px 5px #e5e5e5;
   width: 100%;
   height: 40px;
   padding-top: 2px;
@@ -413,7 +411,7 @@ h3 {
   padding: 10px;
 }
 .fonction__liste__image__titre {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
 }
 .fonction__liste__image:hover {
@@ -535,7 +533,7 @@ h3 {
 .restaurants__restau__choix2__legende__description p {
   margin-top: 5px;
 }
-.restaurants__restau__choix2__legende__like {
+.restaurants__restau__choix2__legende__icone {
   position: absolute;
   cursor: pointer;
   font-size: 21px;
@@ -573,6 +571,11 @@ h3 {
     display: flex;
   }
 }
+@media screen and (min-width: 768px) {
+  .restaurant .menu__entree, .restaurant .menu__plat, .restaurant .menu__dessert {
+    flex-wrap: wrap;
+  }
+}
 .restaurant .menu__entree__titre, .restaurant .menu__plat__titre, .restaurant .menu__dessert__titre {
   display: flex;
   flex-direction: column;
@@ -583,6 +586,13 @@ h3 {
   border-radius: 15px;
   width: 92%;
   margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant .menu__entree__titre, .restaurant .menu__plat__titre, .restaurant .menu__dessert__titre {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .restaurant .menu__entree__titre h3, .restaurant .menu__plat__titre h3, .restaurant .menu__dessert__titre h3 {
   margin-top: 12px;
@@ -600,6 +610,22 @@ h3 {
   .restaurant .menu__entree__titre__tarif, .restaurant .menu__plat__titre__tarif, .restaurant .menu__dessert__titre__tarif {
     margin-left: 25%;
     margin-top: 1%;
+  }
+}
+.restaurant .menu__entree__animation i, .restaurant .menu__plat__animation i, .restaurant .menu__dessert__animation i {
+  margin-left: 90%;
+  margin-top: 21px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant .menu__entree__animation i, .restaurant .menu__plat__animation i, .restaurant .menu__dessert__animation i {
+    margin-left: -40px;
+    margin-top: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant .menu__entree__animation i, .restaurant .menu__plat__animation i, .restaurant .menu__dessert__animation i {
+    margin-left: -38px;
+    margin-top: 22px;
   }
 }
 
